@@ -1,0 +1,7 @@
+hello : hello
+# This is a line of comments
+# hello is a string
+world : "world"
+# of course, u can also use " to represent a string
+array : @Test/array.ejson
+# include a file as var array
