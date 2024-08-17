@@ -36,7 +36,7 @@ export ejson =
       for key, line of data
         if typeof line is "object"
           writeString.push "@#key.ejson"
-          @stringify value, "#key.ejson"
+          @stringify line, "#key.ejson"
         else
           writeString.push JSON.stringify(line)
     else

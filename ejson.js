@@ -60,7 +60,7 @@
           line = data[key];
           if (typeof line === "object") {
             writeString.push("@" + key + ".ejson");
-            this.stringify(value, key + ".ejson");
+            this.stringify(line, key + ".ejson");
           } else {
             writeString.push(JSON.stringify(line));
           }
