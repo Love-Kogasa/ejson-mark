@@ -42,7 +42,7 @@ export ejson =
     else
       for key in Object.keys data
         value = data[ key ]
-        if typeof value is "object" and Array.isArray value is no
+        if typeof value is "object" and Array.isArray(value) is no
           writeString.push "#key : @#key.ejson"
           @stringify value, "#key.ejson"
         else

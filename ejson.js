@@ -69,7 +69,7 @@
         for (i$ = 0, len$ = (ref$ = Object.keys(data)).length; i$ < len$; ++i$) {
           key = ref$[i$];
           value = data[key];
-          if (typeof value === "object" && Array.isArray(value === false)) {
+          if (typeof value === "object" && Array.isArray(value) === false) {
             writeString.push(key + " : @" + key + ".ejson");
             this.stringify(value, key + ".ejson");
           } else {
