@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "chroma": "^0.0.1",
+    "ejson-mark": "^1.0.0"
+  },
+  "name": "ejson-cli",
+  "version": "1.0.0",
+  "main": "bin.js",
+  "devDependencies": {},
+  "bin" : {
+    "ejson" : "./bin.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [ "markup", "ejson", "cli" ],
+  "author": "LiYingchao ( gh : Love-Kogasa )",
+  "license": "MIT",
+  "description": "ejson-mark cli tool"
+}
