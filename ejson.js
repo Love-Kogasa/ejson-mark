@@ -58,7 +58,7 @@
       if (Array.isArray(data)) {
         for (key in data) {
           line = data[key];
-          if (typeof value === "object") {
+          if (typeof line === "object") {
             writeString.push("@" + key + ".ejson");
             this.stringify(value, key + ".ejson");
           } else {

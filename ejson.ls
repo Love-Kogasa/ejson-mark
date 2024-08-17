@@ -34,7 +34,7 @@ export ejson =
     writeString = []
     if Array.isArray data
       for key, line of data
-        if typeof value is "object"
+        if typeof line is "object"
           writeString.push "@#key.ejson"
           @stringify value, "#key.ejson"
         else
